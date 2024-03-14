@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
+
+
 import os
-from gi.repository import Gst, GLib
+from gi.repository import Gst, GLib, GstRtspServer
 import sys
 
 import gi
 gi.require_version('Gst', '1.0')
+gi.require_version('GstRtspServer', '1.0')
+gi.require_version('GLib', '2.0')
 
 
 def on_message(bus: Gst.Bus, message: Gst.Message, loop: GLib.MainLoop):
