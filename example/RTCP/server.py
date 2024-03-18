@@ -27,8 +27,7 @@ class GstRTSPServerExample:
         self.server.set_service("8554")
         self.server.attach(None)
         print('working......')
-        factory.set_state(Gst.State.PLAYING)
-        
+
     def run(self):
         self.loop.run()
 
