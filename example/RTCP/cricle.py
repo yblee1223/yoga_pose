@@ -2,12 +2,12 @@
 
 
 import os
-from gi.repository import Gst, GLib, GstRtspServer
+from gi.repository import Gst, GLib
 import sys
 
 import gi
 gi.require_version('Gst', '1.0')
-gi.require_version('GstRtspServer', '1.0')
+
 gi.require_version('GLib', '2.0')
 
 
